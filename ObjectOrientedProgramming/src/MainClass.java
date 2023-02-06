@@ -2,23 +2,25 @@ public class MainClass {
     public static void main(String args[]){
 
 
-        DoctorInfo di = new DoctorInfo();
+       DoctorInfo di = new DoctorInfo();
 
-        di.data();
+       di.setDoctorData("abc" , "10:00" , "xyz");
+       di.printDoc();
 
-        di.info("Asad" , "General Practitioner");
-        System.out.println();
+        NurseInfo ni = new NurseInfo();
 
-       di.data1();
-       di.info("sana"  , "Nurse Assistant");
+        ni.setNurseData("rr" , "7:00" , "xyz");
+        ni.printNurseData();
 
-        System.out.println();
+        StaffInfo si = new StaffInfo();
 
-       di.data2();
-       di.info("Sajjad" , "laboratory Manager" );
+        si.setStaffData("www" , " 5:00" , "abc");
+        si.printStaffData();
 
+        PatientInfo pi = new PatientInfo();
 
-
+        pi.setPatientData("xxx" , 26 , "abc " , "xyz");
+        pi.printData();
 
     }
 }

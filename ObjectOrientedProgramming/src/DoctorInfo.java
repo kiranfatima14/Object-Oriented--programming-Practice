@@ -1,14 +1,15 @@
 public class DoctorInfo extends HospitalData {
-    String name ;
-    String specialization ;
 
-    public void info(String n , String s){
+    boolean isDegree = true ;
+    public void setDoctorData( String docName , String docTime , String docHosName){
 
-        name = n ;
-        specialization = s;
+        name = docName;
+        timing = docTime;
+        hospital = docHosName;
 
-        System.out.println("Name :" + n);
-        System.out.println("Specialization :" + s);
     }
-
+    public  void printDoc(){
+        System.out.println("Doctor data");
+        System.out.println( "MBBS :" + " "+ isDegree + "   Name :" + name +  "  Time: " + timing + "  Hospital name: "  + hospital);
+    }
 }

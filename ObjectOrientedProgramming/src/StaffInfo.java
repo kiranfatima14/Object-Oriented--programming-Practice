@@ -1,13 +1,15 @@
 public class StaffInfo extends HospitalData {
-    String name;
-    String specialization;
 
-    public void info(String n , String s){
+    public void setStaffData(String staffBoyName , String staffTime , String staffHosName){
 
-        name = n ;
-        specialization = s;
+        name = staffBoyName;
+        timing = staffTime;
+        hospital = staffHosName;
 
-        System.out.println("Name :" + n);
-        System.out.println("Specialization :" + s);
+    }
+
+    public void printStaffData(){
+        System.out.println("Staff data");
+      System.out.println("Name :" + name +  "  Time: " + timing + "  Hospital name: "  + hospital);
     }
 }

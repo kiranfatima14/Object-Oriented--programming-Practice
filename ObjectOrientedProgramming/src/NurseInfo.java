@@ -1,14 +1,18 @@
+import java.net.PortUnreachableException;
+
 public class NurseInfo extends HospitalData{
-    String name;
-    String specialization;
 
-    public void info(String n , String s){
+    public void setNurseData(String nurseName , String nurseTime , String nurseHosName){
 
-        name = n ;
-        specialization = s;
+        name = nurseName ;
+        timing = nurseTime;
+        hospital = nurseHosName;
 
-        System.out.println("Name :" + n);
-        System.out.println("Specialization :" + s);
+    }
+
+    public void printNurseData(){
+        System.out.println("Nurse data");
+        System.out.println("Name :" + name +  "  Time: " + timing + "  Hospital name: " + hospital);
     }
 
 }
